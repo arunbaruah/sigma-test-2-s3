@@ -1,0 +1,142 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "eea38610-2599-46ab-9655-671b39b78c97": {
+        "id": "eea38610-2599-46ab-9655-671b39b78c97",
+        "parent": null,
+        "name": "sigma-test-2-s3.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "sigma-test-2-s3.js",
+        "cursor": {
+          "lineNumber": 17,
+          "column": 5
+        },
+        "config": {
+          "runtime": "nodejs14.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "sigmaTest2S3"
+        },
+        "triggers": [
+          {
+            "resourceName": "httpApigsigmaS3Test2",
+            "config": {
+              "defaultRoute": false,
+              "method": "PUT",
+              "route": "/newupload"
+            }
+          }
+        ],
+        "lastUpdated": 1649622197511
+      },
+      "459fa717-52a2-4870-b201-d9a23c3c9aad": {
+        "id": "459fa717-52a2-4870-b201-d9a23c3c9aad",
+        "parent": null,
+        "name": "package.json",
+        "type": "JSON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "package.json"
+      }
+    },
+    "openFiles": [
+      "eea38610-2599-46ab-9655-671b39b78c97"
+    ],
+    "currentFileId": "eea38610-2599-46ab-9655-671b39b78c97",
+    "resources": {
+      "httpApigsigmaS3Test2": {
+        "name": "httpApigsigmaS3Test2",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 2,
+          "mode": 0,
+          "apiName": "sigma-s3-test-2",
+          "stageName": "$default",
+          "corsConfig": {
+            "allowedHeaders": [
+              "*"
+            ],
+            "allowedMethods": [
+              "*"
+            ],
+            "allowedOrigins": [
+              "*"
+            ],
+            "exposedHeaders": [
+              "*"
+            ],
+            "maxAge": 3000,
+            "allowCredentials": false
+          }
+        }
+      },
+      "s3oraSourceData": {
+        "name": "s3oraSourceData",
+        "type": "S3",
+        "config": {
+          "mode": 1,
+          "bucket": {
+            "name": "ora-source-data"
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "mime-types": {
+          "name": "mime-types",
+          "version": "2.1.35",
+          "dev": false,
+          "language": "nodejs"
+        },
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.817.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.10.0",
+    "projectName": "sigma-test-2-s3",
+    "projectDescription": "file uploader v 2",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1649622966411
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "sigma-test-2-s3",
+      "url": "https://github.com/arunbaruah/sigma-test-2-s3"
+    }
+  }
+}
