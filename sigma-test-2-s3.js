@@ -14,14 +14,14 @@ exports.handler = async (event) => {
     // Determine file extension
     let contentType = event.headers['content-type'] || event.headers['Content-Type'];
     let extension = contentType ? mime.extension(contentType) : '';
-    
+
     let fullFileName = extension ? `${fileName}.${extension}` : fileName;
 
     // Upload the file to S3
     try {
         let data = await s3.putObject({
             Bucket: "ora-source-data",
-            Key: fileName,
+            Key: fullFileName,
             Body: fileContent,
             Metadata: {}
         }).promise();
