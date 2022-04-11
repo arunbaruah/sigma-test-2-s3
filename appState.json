@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "sigma-test-2-s3.js",
         "cursor": {
-          "lineNumber": 24,
-          "column": 30
+          "lineNumber": 36,
+          "column": 37
         },
         "config": {
           "runtime": "nodejs14.x",
@@ -130,7 +130,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1649623688722
+    "lastSave": 1649663584094
   },
   "VCS_STATE": {
     "provider": "GitHub",
